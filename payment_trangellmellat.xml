@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" method="upgrade" group="j2store">
+	<name>trangellMellat</name>
+	<title>trangell_mellat</title>
+	<author>Trangell</author>
+	<creationDate>Jan 2016</creationDate>
+	<copyright>Copyright 2016 Trangell Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>info@trangell.com</authorEmail>
+	<authorUrl>http://trangell.com</authorUrl>
+	<version>0.0.1</version>
+	<description>پلاگین پرداخت جی۲ برای بانک ملت</description>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="melatuser" type="text" label="نام کاربری درگاه" default="" required="" />
+				<field name="melatpass" type="text" label="پسورد درگاه" default="" required="" />
+				<field name="melatterminalId" type="text" label="شناسه ترمینال" default="" required=""/>
+			</fieldset>
+		</fields>
+	</config>
+	<files>
+		<filename plugin="payment_trangellmellat">payment_trangellmellat.php</filename>
+		<filename plugin="payment_trangellmellat">trangell_inputcheck.php</filename>
+		<filename>index.html</filename>
+		<folder>payment_trangellmellat</folder>
+	</files>	
+</extension>
